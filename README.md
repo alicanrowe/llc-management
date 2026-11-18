@@ -7,7 +7,7 @@ It has Claude:
 - keep a compliance calendar with deadlines, statutes, fees and status
 - check the state's public record before trusting any provider's status
 - keep the formation documents in one folder
-- wind down a formation provider (such as ZenBusiness or LegalZoom) safely, with special care for the registered agent and in-progress filings
+- wind down a formation provider (such as LegalZoom or Northwest) safely, with special care for the registered agent and in-progress filings
 - draft filings and agreements for you to review, without submitting, signing or paying on its own
 - set dated reminders
 
