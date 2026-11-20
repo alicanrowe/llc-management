@@ -17,7 +17,7 @@ Copy this folder to `~/.claude/skills/llc-management/`. Then copy `templates/ent
 
 ## State references
 
-- `references/new-york.md`: public record search, agent for service of process, operating agreement (§417), publication (§206), biennial statement, Certificate of Change.
+- `references/new-york.md`: public record search, agent for service of process, operating agreement (§417), publication (§206), biennial statement, and a step-by-step Certificate of Change (DOS-1359-f) for taking a formation service off the record when it won't stop auto-renewing.
 
 For another state, Claude researches the Secretary of State's site and writes a new reference file in the same shape.
 

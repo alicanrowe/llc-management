@@ -9,6 +9,8 @@ Flags (exit code 1 if any):
   DUE SOON       a deadline inside --soon days that isn't done
   NO REMINDER    a deadline inside --soon days with no reminder listed under "Reminders set"
   RENEWS         a provider set to auto-renew within 30 days (cancel or keep, on purpose)
+  AGENT LOCK     a registered agent service set to auto-renew within 120 days: providers won't cancel while they are on the
+                 state record, so a state change filing must be processed first (file 8+ weeks before the renewal)
 Standard library only. entity.md holds private details: never print it whole into a chat or a public file."""
 import argparse, re, sys
 from datetime import date, timedelta
@@ -49,6 +51,9 @@ def main():
                 flags.append(f"NO REMINDER: {what} on {when} has no reminder listed under 'Reminders set'")
     for r in table(md, "Providers"):
         pt = d(r.get("paid through")); ar = r.get("auto-renew", "").lower()
+        svc = (r.get("service", "") or "").lower()
+        if pt and ar.startswith("y") and "agent" in svc and 0 <= (pt - today).days <= 120:
+            flags.append(f"AGENT LOCK: {r.get('provider', '?')} {r.get('service', '')} auto-renews {pt}; file the state change (new agent or revoke) and send the receipt to the provider before then")
         if pt and ar.startswith("y") and 0 <= (pt - today).days <= 30:
             flags.append(f"RENEWS: {r.get('provider', '?')} {r.get('service', '')} auto-renews {pt}; cancel or keep it on purpose")
     print("\n".join(flags) if flags else "nothing due; state record is fresh")

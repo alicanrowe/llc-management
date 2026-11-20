@@ -11,7 +11,7 @@ You act as the LLC's in-house compliance clerk. You keep the facts straight, wat
 
 1. Read `entity.md` in this skill folder. It holds this owner's LLC facts: name, state, state ID, formation date, registered agent, process address, providers, document locations and the tracker URL. If it is missing, copy `templates/entity.example.md` to `entity.md` and fill it in with the owner. Ask only for what you cannot look up.
 2. Read the state reference in `references/` for the LLC's state (for example `references/new-york.md`). If there is none, research the state's rules from the Secretary of State's own site, write a new reference file in the same shape, and tell the owner which facts you verified and where.
-3. Run `python3 scripts/deadlines.py entity.md` (in the folder that holds the private `entity.md`). It flags a stale state record, overdue and soon-due items, soon-due items with no reminder, and providers about to auto-renew. Deal with each flag or tell the owner about it.
+3. Run `python3 scripts/deadlines.py entity.md` (in the folder that holds the private `entity.md`). It flags a stale state record, overdue and soon-due items, soon-due items with no reminder, providers about to auto-renew, and registered agent services that renew within 120 days (these need a state filing first, so 30 days is too late). Deal with each flag or tell the owner about it.
 4. Before you state a deadline or status, check the live public record (see "Check the public record"). The record wins over `entity.md`, memory and anything a provider says. When they disagree, update `entity.md` and tell the owner.
 
 ## Core jobs
@@ -30,7 +30,7 @@ When a published tracker page exists (URL in `entity.md`), update it by republis
 
 ### 2. Check the public record
 
-Use the state's business entity search in the browser. Record: status, filing history (every document and date), the address for service of process, the registered agent, and the next report due date. Note the date you checked. A filing that a provider calls "complete" is not complete until it appears in the state's filing history.
+Use the state's business entity search (in the browser, or its JSON API where the state reference gives one). Record: status, filing history (every document and date), the address for service of process, the registered agent, and the next report due date. Note the date you checked. A filing that a provider calls "complete" is not complete until it appears in the state's filing history.
 
 ### 3. Hold the documents
 
@@ -43,7 +43,12 @@ Work in this order. Confirm each cancellation with the owner before you click it
 1. List every service and order: name, price, term, renewal date, status.
 2. Download all documents and receipts.
 3. Flag anything that must not be cancelled yet, such as a filing still in progress (publication, a pending report).
-4. Registered agent: find out whether the provider is the agent and the process address on the state record. Cancelling an agent without filing a replacement can cost the LLC its good standing and means missed lawsuits. Usually the best move is to turn off auto-renew, keep the paid term, and file the state's change form before it ends. Present the options: the owner as their own agent (needs an in-state street address that is staffed in business hours), a cheaper commercial agent, or keeping the provider.
+4. Registered agent: find out whether the provider is the registered agent, the service of process address, or both, on the state record (formation services usually put themselves on both lines). Cancelling an agent without filing a replacement can cost the LLC its good standing and means missed lawsuits.
+   - **Assume the provider will not turn off auto-renew while it is still on the state record.** a formation service refuses outright (confirmed for NY, 2026-11): it changes the subscription only after a state change filing is processed. So the order is: (a) file the state's change form, (b) wait for it to show in the state's filing history, (c) send the provider the filing receipt and ask in writing to cancel the agent service and auto-renew, (d) check the next invoice. Never plan on "turn off auto-renew now, file later".
+   - Put the provider's renewal date on the calendar with a filing deadline at least 8 weeks before it (mail filings plus provider back-and-forth), and file as soon as the owner picks the replacement. There is no benefit in waiting: the prepaid term is rarely refunded either way.
+   - Check whether the state needs a registered agent at all. Some (New York) don't: the Secretary of State is the statutory agent, so the change can simply revoke the agent and point the process address at the owner. Elsewhere one is required.
+   - Present the options with costs: the owner's own address (free, but it becomes public record), a cheaper commercial agent or mail address, or keeping the provider. Then prepare the state form prefilled (see `references/<state>.md`) for the owner to sign and file.
+   - Check the provider's invoices for a separately billed agent fee on top of a "free first year" line, and other recurring add-ons (website, mail forwarding) that can be cancelled on their own right away. Point them out to the owner.
 5. Cancel what is safe, and send any needed support requests from the owner's own email after they approve the text.
 6. Record what was cancelled, when access ends, and what is still pending in `entity.md` and on the tracker.
 
