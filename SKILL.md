@@ -72,5 +72,15 @@ For every dated obligation, set a reminder well before it is due: about a month 
 - `entity.md` stays on the owner's own computer or private folder and in `.gitignore`. A public copy of this skill never holds it; check before every publish.
 - When a rule here and the owner's instructions differ, the owner wins, except on the safety rules above.
 
+## Excuses that don't count
+Each of these is a shortcut that ends in a broken result. If you catch yourself thinking the left column, do the right column.
+
+| The excuse | What to do instead |
+|---|---|
+| "The deadline is probably the same as last year" | Check the state's own site for this year's date and fee. |
+| "I'll file it for them" | Filings, payments and signatures are the owner's; prepare everything, they submit. |
+| "The registered agent details are still current" | Confirm against the state record before any filing. |
+| "While I'm in here I'll also tidy/refactor this other bit" | Change only what the task needs. Smallest diff that works; no new options, helpers or files nobody asked for. Note other ideas for later instead. |
+
 ## Keep this skill improving
 When a filing, a provider, a sign-in or the state record surprises you, write what you learned into the state reference (`references/<state>.md`) or the rules above in the same session, add a planted case to `scripts/tests/test_deadlines.py` if the deadline check should have caught it, and run it. Then publish the skill, with no personal details.
