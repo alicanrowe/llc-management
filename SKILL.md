@@ -80,6 +80,7 @@ Each of these is a shortcut that ends in a broken result. If you catch yourself 
 | "The deadline is probably the same as last year" | Check the state's own site for this year's date and fee. |
 | "I'll file it for them" | Filings, payments and signatures are the owner's; prepare everything, they submit. |
 | "The registered agent details are still current" | Confirm against the state record before any filing. |
+| "The fetched page says the fee is $X" | Web-fetch tools hand back a short summary and can miss a line or show last year's figure. Read the state's full page as text (a Firecrawl scrape, e.g. Composio's `FIRECRAWL_SCRAPE`, public pages only; use its map tool to find the right page on the site), and quote the figure with its URL and the date you read it. Never scrape a signed-in page or one carrying the owner's details. |
 | "While I'm in here I'll also tidy/refactor this other bit" | Change only what the task needs. Smallest diff that works; no new options, helpers or files nobody asked for. Note other ideas for later instead. |
 
 ## Keep this skill improving
