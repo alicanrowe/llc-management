@@ -1,6 +1,6 @@
 ---
 name: llc-management
-description: Manage a small US LLC after formation, in place of a paid formation/compliance service. Use when the user asks about their LLC's deadlines, state filings (annual or biennial reports, publication, changes of address or registered agent), operating agreement, registered agent, EIN or formation documents, checking the LLC's status in the state's public record, cancelling or winding down a service like LegalZoom, Northwest or a similar service, or keeping an LLC compliance calendar and reminders up to date.
+description: Manage a small US LLC after formation, in place of a paid formation/compliance service. Use when the user asks about their LLC's deadlines, state filings (annual or biennial reports, publication, changes of address or registered agent), operating agreement, registered agent, EIN or formation documents, checking the LLC's status in the state's public record, cancelling or winding down a service like LegalZoom, Northwest or a similar service, keeping an LLC compliance calendar and reminders up to date, or finding, leasing and equipping a workshop or studio space for the LLC.
 ---
 
 # LLC management
@@ -60,6 +60,18 @@ Draft forms, letters and agreements, such as a certificate of change, a biennial
 
 For every dated obligation, set a reminder well before it is due: about a month ahead for simple reports, and 6 to 8 weeks for anything that needs a third party (publication, a new agent). Use the scheduling tools available (scheduled tasks, calendar). Write each reminder's prompt so it stands alone: entity name, state ID, what is due, the deadline, and the tracker URL. Tell the owner which reminders were set and which were not.
 
+### 7. Find and equip a workshop
+
+When the owner wants a shop space for the LLC, run it as research first and a lease second.
+
+1. Write the brief in `entity.md` (private): trade, people working, machines, square feet, power, budget, move-in date, vehicles to park, neighbourhoods.
+2. Build a shortlist from public listings: nonprofit industrial landlords first (in NYC, GMDC), then city-owned campuses, private maker buildings, and shared shops as a stepping stone. `references/workshop-space-nyc.md` has the NYC sources and figures as last checked.
+3. For each option record: address, size, asking rent (or "not posted"), terms, power, loading and freight, parking, zoning or certificate of occupancy for the use, waitlists, and the date you read it. Never fill in a rent a landlord didn't publish; give a market range and label it as an estimate.
+4. Check each space against the use before anyone signs: the certificate of occupancy or zoning allows woodworking, enough electrical service for the machines (230 V at least, three-phase if the machines need it), dust collection can be ducted and vented, finishing is allowed (spraying needs an FDNY permit), loading and freight fit sheet goods and machines, and insurance the lease demands. The questions to ask a landlord are in the reference.
+5. Price the tool list from current retailer pages (see `references/woodshop-tools.md` for a starting list), dated, with estimates marked as estimates. Skip what the owner already owns.
+6. Show the owner the comparison with a recommendation. Contacting a landlord, touring, applying, signing or paying a deposit is the owner's call: draft the inquiry email for their OK, never send it on your own.
+7. Once a lease is signed, add rent, renewal, insurance and deposit dates to the compliance calendar, and ask whether the shop should become the LLC's service of process address (in NY that keeps a home address off the public record; it needs a Certificate of Change).
+
 ## Rules
 
 - Never enter passwords, card numbers, SSNs or EINs into web forms, and never pay a fee or submit a filing without the owner's explicit approval for that action.
@@ -81,6 +93,8 @@ Each of these is a shortcut that ends in a broken result. If you catch yourself 
 | "I'll file it for them" | Filings, payments and signatures are the owner's; prepare everything, they submit. |
 | "The registered agent details are still current" | Confirm against the state record before any filing. |
 | "The fetched page says the fee is $X" | Web-fetch tools hand back a short summary and can miss a line or show last year's figure. Read the state's full page as text (a Firecrawl scrape, e.g. Composio's `FIRECRAWL_SCRAPE`, public pages only; use its map tool to find the right page on the site), and quote the figure with its URL and the date you read it. Never scrape a signed-in page or one carrying the owner's details. |
+| "The listing doesn't show a rent, so I'll put the market rate" | Write "not posted" and give a labelled market range with its source. Only the landlord's quote is a price. |
+| "This space looks fine for a woodshop" | Check the certificate of occupancy or zoning, power, venting and loading before calling it a fit. A shop that can't run its dust collector or spray finish isn't a fit. |
 | "While I'm in here I'll also tidy/refactor this other bit" | Change only what the task needs. Smallest diff that works; no new options, helpers or files nobody asked for. Note other ideas for later instead. |
 
 ## Keep this skill improving

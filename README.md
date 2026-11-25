@@ -12,6 +12,7 @@ It has Claude:
 - wind down a formation provider (such as LegalZoom or Northwest) safely, with special care for the registered agent and in-progress filings
 - draft filings and agreements for you to review, without submitting, signing or paying on its own
 - set dated reminders
+- find, compare and equip a workshop space (research and drafts only; you contact landlords and sign)
 
 ## Install
 
@@ -20,6 +21,9 @@ Copy this folder to `~/.claude/skills/llc-management/`. Then copy `templates/ent
 ## State references
 
 - `references/new-york.md`: public record search, agent for service of process, operating agreement (§417), publication (§206), biennial statement, and a step-by-step Certificate of Change (DOS-1359-f) for taking a formation service off the record when it won't stop auto-renewing.
+
+- `references/workshop-space-nyc.md`: NYC shop space sources (GMDC, Industry City, Brooklyn Army Terminal, shared woodshops), what to ask a landlord, and rules worth knowing.
+- `references/woodshop-tools.md`: an essential tool list for a small solid-wood furniture shop, with dated prices.
 
 For another state, Claude researches the Secretary of State's site and writes a new reference file in the same shape.
 
