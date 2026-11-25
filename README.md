@@ -24,6 +24,7 @@ Copy this folder to `~/.claude/skills/llc-management/`. Then copy `templates/ent
 
 - `references/workshop-space-nyc.md`: NYC shop space sources (GMDC, Industry City, Brooklyn Army Terminal, shared woodshops), what to ask a landlord, and rules worth knowing.
 - `references/woodshop-tools.md`: an essential tool list for a small solid-wood furniture shop, with dated prices.
+- `references/woodshop-buildout.md`: how to find live used listings, a dated buy list for a Brooklyn shop, saved searches, build-out steps, and running costs and early income.
 
 For another state, Claude researches the Secretary of State's site and writes a new reference file in the same shape.
 
