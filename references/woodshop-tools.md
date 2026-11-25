@@ -77,7 +77,7 @@ Used prices below are NYC / Northeast estimates from sold archives, auction resu
 
 Good for: starting while learning what the shop really needs. Limits: 6" jointer and 13" planer are small for wide solid-wood tops.
 
-### Package B: balanced pro (about $13,000-20,000)
+### Package B: balanced pro (about $12,000-20,000)
 
 | Tool | Used pick | Used price |
 |---|---|---|
@@ -95,7 +95,7 @@ Good for: starting while learning what the shop really needs. Limits: 6" jointer
 
 Good for: a working professional shop on a single-phase 240 V supply. Closest to the new list at about half the cost.
 
-### Package C: vintage cast iron (about $7,000-12,500)
+### Package C: vintage cast iron (about $6,000-13,500)
 
 | Tool | Used pick | Used price |
 |---|---|---|
