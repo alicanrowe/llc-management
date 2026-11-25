@@ -145,7 +145,7 @@ A 7 ft workbench with a 4" laminated top is about 80 bf finished, so buy about 1
 
 ## Electrical schedule (estimate; the electrician sizes from the motor plates)
 
-| Circuit | Load | Breaker | Wire (Cu) |
+| Circuit | Count | Breaker | Wire (Cu) |
 |---|---|---|---|
 | Table saw, 3 HP, 240 V | 1 | 30 A | 10 AWG |
 | Jointer-planer, 3 HP, 240 V | 1 | 30 A | 10 AWG |
