@@ -1,3 +1,5 @@
+![LLC management: Run a small US LLC yourself: compliance calendar, state record checks, documents and reminders.](.github/banner.png)
+
 # llc-management
 
 A Claude skill for running a small US LLC yourself after formation, instead of paying a compliance service.
