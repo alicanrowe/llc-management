@@ -131,3 +131,35 @@ These are my estimates for a one-person shop, not quotes.
 - Months 6-12: grow commissions, with classes and bench rental as the base that pays the rent.
 
 **Break-even guess:** with rent around $4,500 a month, three bench renters (about $1,800) and two classes (about $2,400 for 8 people) nearly cover rent, insurance and power. One commission a month on top makes the shop profitable.
+
+## Lumber (read 25 Nov 2026)
+
+| Yard | Where | What it's good for |
+|---|---|---|
+| [Adriatic Wood Products](https://www.adriaticwood.com/lumber/) | Brooklyn (Pitkin Ave), Mon-Fri 7 AM-3:30 PM | Closest hardwood yard; over a million board feet; walnut 4/4-16/4, white ash 4/4-12/4, rough sawn; quote by phone |
+| [Singh Hardwood](https://singhhardwood.com/) | Far Rockaway, Queens | Ash, black walnut, flattened kiln-dried slabs 15-48" wide |
+| [Reco BKLYN](https://www.recobklyn.com/slabs/) | Brooklyn | Urban reclaimed live-edge walnut, ash, elm, maple |
+| [Hearne Hardwoods](https://www.hearnehardwoods.com/price-list/) | Oxford, PA | Pick your own; posted: white ash FAS $6.00-8.50/bf, black walnut $6.00-25.00/bf, white oak $6.50-19.50/bf; book 24 h ahead |
+
+A 7 ft workbench with a 4" laminated top is about 80 bf finished, so buy about 120 bf rough (estimate).
+
+## Electrical schedule (estimate; the electrician sizes from the motor plates)
+
+| Circuit | Load | Breaker | Wire (Cu) |
+|---|---|---|---|
+| Table saw, 3 HP, 240 V | 1 | 30 A | 10 AWG |
+| Jointer-planer, 3 HP, 240 V | 1 | 30 A | 10 AWG |
+| Bandsaw 21", 5 HP, 240 V | 1 | 40 A | 8 AWG |
+| Cyclone, 3 HP, 240 V | 1 | 30 A | 10 AWG |
+| Bench wall outlets, 120 V | 2 | 20 A | 12 AWG |
+| Small machines and lighting, 120 V | 2 | 20 A | 12 AWG |
+
+One big machine plus the cyclone at a time: a 100 A subpanel is comfortable, 60 A the minimum. In NYC a licensed electrician files the work with the Department of Buildings.
+
+## Lighting (estimate)
+
+About 50 foot-candles general and 100 at benches and the saw. For about 1,900 sq ft that is roughly 160,000 lumens of fixtures (about 32 four-foot LED fixtures at 5,000 lm), plus two over each bench. 5000 K, CRI 90+ so finishes read true.
+
+## Day-one consumables and safety, bought new (about $2,000-2,800, estimate)
+
+Saw blades (rip, combination, crosscut, dado), bandsaw blades (resaw and curve), spare cutter inserts, sandpaper, glue, finish (hardwax oil, shellac), respirators with P100 filters, ear and eye protection, two 10 lb ABC extinguishers, an oily-waste can, first aid, a 30-gallon flammables cabinet, push sticks and featherboards.
